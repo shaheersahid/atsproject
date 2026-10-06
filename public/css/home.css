@@ -78,17 +78,18 @@ img {
     flex-shrink: 0;
 }
 
-.brand-logo-img {
+.brand-logo-img,
+.navbar-logo img {
     display: block;
-    height: 38px;
-    width: auto;
-    max-width: min(210px, 48vw);
+    width: 200px;
+    height: auto;
+    max-width: 100%;
     object-fit: contain;
 }
 
 .site-footer .brand-logo-img {
-    height: 42px;
-    max-width: min(230px, 65vw);
+    width: 200px;
+    height: auto;
 }
 
 .brand-mark {
@@ -965,9 +966,10 @@ img {
         grid-template-columns: 1fr auto;
     }
 
-    .brand-logo-img {
-        height: 32px;
-        max-width: min(170px, 52vw);
+    .brand-logo-img,
+    .navbar-logo img {
+        width: min(200px, 55vw);
+        height: auto;
     }
 
     .nav-toggle {

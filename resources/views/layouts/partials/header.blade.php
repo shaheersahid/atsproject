@@ -4,7 +4,7 @@
 <header class="site-header">
     <div class="container-ats">
         <nav class="navbar-ats" aria-label="Primary">
-            <a class="brand" href="{{ route('home') }}">
+            <a class="brand navbar-logo" href="{{ route('home') }}">
                 <img class="brand-logo-img" src="{{ asset('images/ats-logo-transparent.png') }}" alt="Artificial Technology Solutions">
             </a>
 

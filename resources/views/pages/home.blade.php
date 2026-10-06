@@ -3,13 +3,18 @@
 @section('title', 'ATS — Artificial Technology Solutions')
 @section('meta_description', 'ATS builds intelligent products, venture-backed businesses, and scalable technology for a brighter tomorrow.')
 
+@push('styles')
+<link href="{{ asset('css/home-reference.css') }}" rel="stylesheet">
+@endpush
+
 @section('content')
+<div class="home-reference">
 <section class="hero" id="top">
     <div class="container-ats">
         <div class="hero-grid">
             <div data-reveal>
                 <p class="hero-kicker">Ideas • Products • Technology • A Brighter Tomorrow</p>
-                <h1 class="hero-title">We build what comes next.</h1>
+                <h1 class="hero-title">We build what<br><span class="glow">comes next.</span></h1>
                 <p class="hero-copy">
                     ATS creates intelligent products, venture-backed businesses, and scalable technology
                     platforms that empower people and build a brighter tomorrow.
@@ -21,11 +26,8 @@
             </div>
 
             <div class="hero-visual" data-reveal>
-                <img class="hero-visual-bg" src="{{ asset('images/hero-globe.jpg') }}" alt="Digital globe of connected intelligence with futuristic city skyline">
-                <div class="float-card c1">Intelligent Products<small>Live consumer platforms</small></div>
-                <div class="float-card c2">Venture-Backed Businesses<small>Build • Fund • Scale</small></div>
-                <div class="float-card c3">Empowering People<small>Real-world impact</small></div>
-                <div class="float-card c4">Scalable Technology<small>ATNIC intelligence layer</small></div>
+                <img class="hero-visual-bg" src="{{ asset('images/home-hero.jpg') }}" alt="Connected blue and gold Earth above a futuristic city" width="1536" height="1024" fetchpriority="high">
+                <div class="hero-globe-brand" aria-hidden="true"><strong>ATS</strong><span>Ideas today<br>A brighter tomorrow</span></div>
             </div>
         </div>
 
@@ -61,7 +63,7 @@
             <div class="col-md-6" data-reveal>
                 <article class="arm-card">
                     <div class="arm-card-media">
-                        <img src="{{ asset('images/ats-products-city.jpg') }}" alt="Futuristic night city representing ATS Products">
+                        <img src="{{ asset('images/home-city.jpg') }}" loading="lazy" decoding="async" alt="Futuristic night city representing ATS Products">
                     </div>
                     <div class="arm-card-body">
                         <svg class="arm-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -81,7 +83,7 @@
             <div class="col-md-6" data-reveal>
                 <article class="arm-card">
                     <div class="arm-card-media">
-                        <img src="{{ asset('images/ats-ventures-mountain.jpg') }}" alt="Sunrise mountain peak representing ATS Ventures">
+                        <img src="{{ asset('images/home-mountain.jpg') }}" loading="lazy" decoding="async" alt="Sunrise mountain peak representing ATS Ventures">
                     </div>
                     <div class="arm-card-body">
                         <svg class="arm-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -112,7 +114,7 @@
             <div class="col-md-6" data-reveal>
                 <article class="product-card">
                     <div class="product-card-media">
-                        <img src="{{ asset('images/deal4less.jpg') }}" alt="Neon shopping street for Deal4Less">
+                        <img src="{{ asset('images/home-shopping.jpg') }}" loading="lazy" decoding="async" alt="Shopper carrying bags through a lively illuminated shopping district">
                     </div>
                     <div class="product-card-body">
                         <div class="product-logo d4l">D4L</div>
@@ -135,7 +137,7 @@
                     <div class="col-md-6" data-reveal>
                 <article class="product-card">
                     <div class="product-card-media">
-                        <img src="{{ asset('images/fitnass.jpg') }}" alt="Fitnass AI fitness and nutrition experience">
+                        <img src="{{ asset('images/home-wellness.jpg') }}" loading="lazy" decoding="async" alt="Woman meditating in a lakeside mountain wellness studio">
                     </div>
                     <div class="product-card-body">
                         <div class="product-logo fit product-logo--image">
@@ -184,56 +186,31 @@
             <div data-reveal>
                 <div class="pipeline" aria-label="ATNIC intelligence pipeline">
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">
-                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6">
-                                <rect x="10" y="22" width="12" height="12" rx="1"/>
-                                <rect x="20" y="14" width="12" height="12" rx="1"/>
-                                <rect x="26" y="26" width="12" height="12" rx="1"/>
-                            </svg>
+                        <div class="pipeline-icon"><span class="pipeline-art" aria-hidden="true"></span>
                         </div>
                         <strong>DATA</strong>
                         <span>Multi-source intake</span>
                     </div>
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">
-                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6">
-                                <path d="M8 34V18l8-6 8 6v16"/>
-                                <path d="M24 34V20l8-6 8 6v14"/>
-                                <path d="M8 34h32"/>
-                            </svg>
+                        <div class="pipeline-icon"><span class="pipeline-art" aria-hidden="true"></span>
                         </div>
                         <strong>CONTEXT</strong>
                         <span>Situational mapping</span>
                     </div>
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">
-                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6">
-                                <circle cx="24" cy="24" r="8"/>
-                                <circle cx="24" cy="24" r="14" opacity="0.5"/>
-                                <path d="M24 6v4M24 38v4M6 24h4M38 24h4"/>
-                            </svg>
+                        <div class="pipeline-icon"><span class="pipeline-art" aria-hidden="true"></span>
                         </div>
                         <strong>REASONING</strong>
                         <span>Context-aware logic</span>
                     </div>
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">
-                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6">
-                                <path d="M10 30 24 16l14 14"/>
-                                <path d="M14 34h20"/>
-                                <path d="M18 38h12"/>
-                            </svg>
+                        <div class="pipeline-icon"><span class="pipeline-art" aria-hidden="true"></span>
                         </div>
                         <strong>INFERENCE</strong>
                         <span>Predictive signals</span>
                     </div>
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">
-                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6">
-                                <circle cx="24" cy="24" r="4"/>
-                                <circle cx="24" cy="24" r="10"/>
-                                <circle cx="24" cy="24" r="16" stroke-dasharray="3 3"/>
-                            </svg>
+                        <div class="pipeline-icon"><span class="pipeline-art" aria-hidden="true"></span>
                         </div>
                         <strong>ACTION</strong>
                         <span>Real-world outcomes</span>
@@ -309,11 +286,12 @@
 
 <section class="cta-band" id="contact">
     <div class="cta-band-media">
-        <img src="{{ asset('images/earth-cta.jpg') }}" alt="Glowing Earth horizon from space">
+        <img src="{{ asset('images/home-earth.jpg') }}" loading="lazy" decoding="async" alt="Glowing Earth horizon from space">
     </div>
     <div class="cta-band-inner" data-reveal>
         <h2>The next great company may start with <span class="gold">one idea.</span></h2>
         <a class="btn-gold" href="{{ route('contact') }}">Partner with ATS →</a>
     </div>
 </section>
+</div>
 @endsection

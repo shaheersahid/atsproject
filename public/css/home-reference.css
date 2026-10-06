@@ -1,0 +1,279 @@
+.home-reference {
+    background: #020a11;
+}
+
+.home-reference .hero {
+    padding: 2rem 0 1.75rem;
+    background: #020a11;
+}
+
+.home-reference .hero-grid {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 0;
+}
+
+.home-reference .hero-grid > :first-child {
+    position: relative;
+    z-index: 2;
+}
+
+.home-reference .hero-title {
+    font-size: clamp(2.5rem, 4.4vw, 3.7rem);
+}
+
+.home-reference .hero-kicker {
+    font-size: 0.6rem;
+}
+
+.home-reference .hero-visual {
+    width: 118%;
+    margin-left: -12%;
+    min-height: 0;
+    align-self: stretch;
+}
+
+.home-reference .hero-visual-bg {
+    height: 100%;
+    min-height: 440px;
+    object-fit: cover;
+    border-radius: 0;
+    mask-image: linear-gradient(90deg, transparent, #000 16%, #000 96%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 16%, #000 96%, transparent);
+}
+
+.hero-globe-brand {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0 0 18px #59bcff, 0 2px 8px #000;
+}
+
+.hero-globe-brand strong {
+    display: block;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+}
+
+.hero-globe-brand span {
+    display: block;
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.home-reference .stats-bar {
+    position: relative;
+    width: 46%;
+    margin-top: -1.8rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    backdrop-filter: none;
+}
+
+.home-reference .stat-item {
+    padding: 0.2rem 0.8rem;
+    text-align: left;
+}
+
+.home-reference .stat-label {
+    font-size: 0.68rem;
+}
+
+.home-reference .section {
+    padding: 1.3rem 0;
+    border-top: 1px solid #24313f;
+}
+
+.home-reference .section-head {
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.home-reference .arm-card {
+    min-height: 300px;
+    height: 100%;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.home-reference .arm-card-media::after {
+    background: linear-gradient(90deg, transparent 20%, rgba(2, 8, 15, 0.28) 46%, rgba(2, 8, 15, 0.88) 100%);
+}
+
+.home-reference .arm-card-body {
+    width: 55%;
+    margin-left: auto;
+    padding: 1.3rem 1.2rem 1.3rem 0.5rem;
+}
+
+.home-reference .arm-card p {
+    font-size: 0.82rem;
+}
+
+.home-reference .arm-card .arm-tags {
+    font-size: 0.57rem;
+    margin-bottom: 0;
+}
+
+.home-reference #ventures .col-md-6:last-child .arm-card {
+    border-color: #9b8560;
+    box-shadow: 0 0 20px #d8ac4820;
+}
+
+.home-reference .product-card,
+.home-reference .product-card-body {
+    min-height: 350px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.home-reference .product-card-media img {
+    object-position: center 35%;
+}
+
+.home-reference .product-card-media::after {
+    background: linear-gradient(180deg, transparent 20%, rgba(2, 8, 15, 0.15) 40%, rgba(2, 8, 15, 0.92) 75%, #02080f 100%);
+}
+
+.home-reference .product-card-body {
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-content: end;
+    align-items: center;
+    gap: 0.5rem 0.65rem;
+}
+
+.home-reference .product-logo {
+    width: 34px;
+    height: 34px;
+    margin: 0;
+}
+
+.home-reference .product-card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.home-reference .product-card p,
+.home-reference .product-meta {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+.home-reference .product-card p {
+    font-size: 0.8rem;
+}
+
+.home-reference .atnic {
+    background: #020a11;
+}
+
+.home-reference .atnic-layout {
+    grid-template-columns: 0.9fr 1.3fr;
+    gap: 1.5rem;
+}
+
+.home-reference .pipeline-step {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 0.3rem;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.home-reference .pipeline-step strong {
+    order: -1;
+    font-size: 0.58rem;
+    letter-spacing: 0;
+}
+
+.home-reference .pipeline-icon {
+    width: 100%;
+    height: 110px;
+    margin: 0;
+}
+
+.home-reference .pipeline-art {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url('../images/home-pipeline.jpg');
+    background-size: 500% 100%;
+    background-repeat: no-repeat;
+}
+
+.home-reference .pipeline-step:nth-child(2) .pipeline-art { background-position: 25% 50%; }
+.home-reference .pipeline-step:nth-child(3) .pipeline-art { background-position: 50% 50%; }
+.home-reference .pipeline-step:nth-child(4) .pipeline-art { background-position: 75% 50%; }
+.home-reference .pipeline-step:nth-child(5) .pipeline-art { background-position: 100% 50%; }
+
+.home-reference .cta-band {
+    min-height: 235px;
+}
+
+.home-reference .cta-band-media img {
+    object-position: center 50%;
+}
+
+.home-reference .cta-band-media::after {
+    background: linear-gradient(90deg, #020a11b8, transparent 65%, #020a1140);
+}
+
+@media (max-width: 991.98px) {
+    .home-reference .hero-grid,
+    .home-reference .atnic-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .home-reference .hero-visual {
+        order: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .home-reference .hero-visual-bg {
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+    }
+
+    .home-reference .stats-bar {
+        width: 100%;
+        margin-top: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .home-reference .stat-item {
+        border-bottom: 0;
+    }
+
+    .home-reference .pipeline {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .home-reference .arm-card-body {
+        width: 61%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-reference .hero-title { font-size: 2.5rem; }
+    .home-reference .hero-actions { margin-bottom: 0.5rem; }
+    .home-reference .stat-item { padding: 0.2rem 0.5rem; }
+    .home-reference .stat-label { font-size: 0.59rem; }
+    .home-reference .arm-card { min-height: 265px; }
+    .home-reference .pipeline { gap: 0.25rem; }
+    .home-reference .pipeline-step { padding-inline: 0.15rem; }
+    .home-reference .pipeline-icon { height: 80px; }
+    .home-reference .pipeline-step strong { font-size: 0.48rem; }
+    .home-reference .pipeline-step > span { font-size: 0.54rem; }
+}

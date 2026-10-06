@@ -81,15 +81,15 @@ img {
 .brand-logo-img,
 .navbar-logo img {
     display: block;
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 51px;
     max-width: 100%;
     object-fit: contain;
 }
 
 .site-footer .brand-logo-img {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 51px;
 }
 
 .brand-mark {
@@ -968,8 +968,9 @@ img {
 
     .brand-logo-img,
     .navbar-logo img {
-        width: min(200px, 55vw);
-        height: auto;
+        width: auto;
+        height: 51px;
+        max-width: min(220px, 55vw);
     }
 
     .nav-toggle {

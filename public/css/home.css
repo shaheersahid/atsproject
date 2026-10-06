@@ -80,15 +80,15 @@ img {
 
 .brand-logo-img {
     display: block;
-    height: 28px;
+    height: 38px;
     width: auto;
-    max-width: min(150px, 38vw);
+    max-width: min(210px, 48vw);
     object-fit: contain;
 }
 
 .site-footer .brand-logo-img {
-    height: 32px;
-    max-width: min(170px, 55vw);
+    height: 42px;
+    max-width: min(230px, 65vw);
 }
 
 .brand-mark {
@@ -966,8 +966,8 @@ img {
     }
 
     .brand-logo-img {
-        height: 24px;
-        max-width: min(130px, 48vw);
+        height: 32px;
+        max-width: min(170px, 52vw);
     }
 
     .nav-toggle {

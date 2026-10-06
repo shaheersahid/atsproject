@@ -26,8 +26,7 @@
             </div>
 
             <div class="hero-visual" data-reveal>
-                <img class="hero-visual-bg" src="{{ asset('images/home-hero.jpg') }}" alt="Connected blue and gold Earth above a futuristic city" width="1536" height="1024" fetchpriority="high">
-                <div class="hero-globe-brand" aria-hidden="true"><strong>ATS</strong><span>Ideas today<br>A brighter tomorrow</span></div>
+                <img class="hero-visual-bg" src="{{ asset('images/home-hero-labeled.jpg') }}" alt="ATS ? Ideas today, a brighter tomorrow. Connected Earth with panels for Intelligent Products, Venture-Backed Businesses, Empowering People, and Scalable Technology." width="1536" height="1024" fetchpriority="high">
             </div>
         </div>
 

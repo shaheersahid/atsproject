@@ -1,0 +1,469 @@
+.fitnass-page {
+    --fit-mint: #60f1c5;
+    --fit-cyan: #5dcfff;
+    --fit-blue: #0c79df;
+    --fit-navy: #020a12;
+    --fit-panel: rgba(5, 20, 31, 0.82);
+    background:
+        radial-gradient(circle at 85% 18%, rgba(39, 176, 255, 0.11), transparent 27rem),
+        radial-gradient(circle at 15% 48%, rgba(56, 224, 181, 0.07), transparent 24rem),
+        var(--fit-navy);
+}
+
+.fitnass-page .fitnass-hero {
+    position: relative;
+    min-height: clamp(650px, 64vw, 820px);
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+    background: transparent;
+    overflow: hidden;
+}
+
+.fitnass-page .fitnass-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(90deg, rgba(2, 10, 18, 0.98) 0%, rgba(2, 10, 18, 0.86) 30%, rgba(2, 10, 18, 0.28) 60%, rgba(2, 10, 18, 0.05) 100%),
+        linear-gradient(180deg, rgba(2, 10, 18, 0.2), transparent 65%, var(--fit-navy));
+    pointer-events: none;
+}
+
+.fitnass-page .fitnass-hero::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(96, 241, 197, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(96, 241, 197, 0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(to right, #000, transparent 58%);
+    pointer-events: none;
+}
+
+.fitnass-page .page-hero-grid {
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.fitnass-page .page-hero-grid > div {
+    width: min(610px, 52%);
+}
+
+.fitnass-page .brand-lockup {
+    width: fit-content;
+    padding: 0.55rem 0.8rem 0.55rem 0.6rem;
+    border: 1px solid rgba(96, 241, 197, 0.22);
+    border-radius: 999px;
+    background: rgba(6, 22, 33, 0.72);
+    box-shadow: inset 0 0 24px rgba(96, 241, 197, 0.04);
+}
+
+.fitnass-page .brand-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.fitnass-page .hero-kicker {
+    color: #b9d7df;
+    letter-spacing: 0.12em;
+}
+
+.fitnass-page .page-title {
+    max-width: 37rem;
+    font-size: clamp(2.75rem, 5vw, 4.6rem);
+    letter-spacing: -0.045em;
+}
+
+.fitnass-page .page-title .glow {
+    background: linear-gradient(90deg, #fff 0%, var(--fit-mint) 48%, var(--fit-cyan) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.fitnass-page .hero-copy {
+    max-width: 39rem;
+    color: #b8c6ce;
+    font-size: 0.98rem;
+    line-height: 1.85;
+}
+
+.fitnass-page .btn-solid-pill {
+    background: linear-gradient(120deg, #eafff8, var(--fit-mint));
+    color: #02120e;
+    box-shadow: 0 0 30px rgba(96, 241, 197, 0.2);
+}
+
+.fitnass-page .btn-solid-pill:hover {
+    color: #02120e;
+    box-shadow: 0 0 40px rgba(96, 241, 197, 0.34);
+}
+
+.fitnass-page .fitnass-hero-media {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    min-height: 0;
+    border: 0;
+    border-radius: 0;
+    background: #06131e;
+    box-shadow: none;
+}
+
+.fitnass-page .fitnass-hero-media::before {
+    display: none;
+}
+
+.fitnass-page .fitnass-hero-media > img {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fitnass-app-badge {
+    position: absolute;
+    z-index: 2;
+    right: max(1.25rem, calc((100vw - 1180px) / 2));
+    bottom: 2rem;
+    width: 74px;
+    height: 74px;
+    padding: 0.45rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background: rgba(2, 13, 20, 0.72);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.38), 0 0 28px rgba(96, 241, 197, 0.2);
+    backdrop-filter: blur(14px);
+}
+
+.fitnass-app-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+.fitnass-page .section {
+    position: relative;
+    padding: 5rem 0;
+}
+
+.fitnass-page .section-head {
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-color: rgba(123, 186, 209, 0.18);
+}
+
+.fitnass-page .section-title {
+    font-size: 0.86rem;
+    color: #efffff;
+}
+
+.fitnass-page .section-title::before {
+    content: "";
+    display: inline-block;
+    width: 2.25rem;
+    height: 2px;
+    margin-right: 0.7rem;
+    vertical-align: middle;
+    background: linear-gradient(90deg, var(--fit-mint), var(--fit-cyan));
+    box-shadow: 0 0 12px rgba(96, 241, 197, 0.6);
+}
+
+.fitnass-page .section-sub {
+    color: #7f9dab;
+}
+
+.fitnass-page .fitnass-feature-section {
+    border-top: 1px solid rgba(123, 186, 209, 0.12);
+}
+
+.fitnass-page .why-grid {
+    gap: 1.15rem;
+}
+
+.fitnass-page .fitnass-feature-card {
+    position: relative;
+    min-height: 230px;
+    padding: 5.2rem 1.35rem 1.35rem;
+    border-color: rgba(103, 179, 207, 0.2);
+    border-radius: 20px;
+    background:
+        linear-gradient(145deg, rgba(11, 35, 50, 0.88), rgba(3, 15, 25, 0.96));
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.03);
+    overflow: hidden;
+}
+
+.fitnass-page .fitnass-feature-card::before {
+    content: "";
+    position: absolute;
+    top: 1.3rem;
+    left: 1.35rem;
+    width: 46px;
+    height: 46px;
+    border: 1px solid rgba(96, 241, 197, 0.3);
+    border-radius: 14px;
+    background:
+        radial-gradient(circle at center, var(--fit-mint) 0 3px, transparent 4px),
+        linear-gradient(135deg, rgba(96, 241, 197, 0.16), rgba(93, 207, 255, 0.05));
+    box-shadow: 0 0 24px rgba(96, 241, 197, 0.1);
+}
+
+.fitnass-page .fitnass-feature-card::after {
+    content: "";
+    position: absolute;
+    top: 2.7rem;
+    left: 2.25rem;
+    width: 18px;
+    height: 1px;
+    background: var(--fit-mint);
+    box-shadow: 0 -6px var(--fit-cyan), 0 6px var(--fit-cyan);
+}
+
+.fitnass-page .fitnass-feature-card:hover {
+    border-color: rgba(96, 241, 197, 0.5);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25), 0 0 28px rgba(96, 241, 197, 0.08);
+    transform: translateY(-5px);
+}
+
+.fitnass-page .fitnass-feature-card h3 {
+    font-size: 1.08rem;
+}
+
+.fitnass-page .fitnass-feature-card p {
+    color: #93aab5;
+    line-height: 1.7;
+}
+
+.fitnass-page .fitnass-coming-section {
+    border-block: 1px solid rgba(123, 186, 209, 0.12);
+    background: linear-gradient(180deg, rgba(8, 31, 44, 0.48), rgba(2, 10, 18, 0.12));
+}
+
+.fitnass-page .fitnass-next-card {
+    position: relative;
+    min-height: 245px;
+    padding: 2.1rem;
+    border-color: rgba(93, 207, 255, 0.22);
+    border-radius: 22px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(93, 207, 255, 0.13), transparent 45%),
+        rgba(5, 19, 30, 0.92);
+    overflow: hidden;
+}
+
+.fitnass-page .fitnass-next-card::after {
+    content: "";
+    position: absolute;
+    right: -2.5rem;
+    bottom: -3.5rem;
+    width: 11rem;
+    aspect-ratio: 1;
+    border: 1px solid rgba(96, 241, 197, 0.12);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2rem rgba(93, 207, 255, 0.025), inset 0 0 0 4rem rgba(96, 241, 197, 0.02);
+}
+
+.fitnass-page .fitnass-next-card .eyebrow {
+    color: var(--fit-mint);
+}
+
+.fitnass-page .fitnass-next-card h3 {
+    max-width: 24rem;
+    margin-top: 2.2rem;
+    font-size: clamp(1.45rem, 2.4vw, 2rem);
+}
+
+.fitnass-page .fitnass-next-card > p:last-child {
+    max-width: 32rem;
+    color: #9aafb9;
+    line-height: 1.75;
+}
+
+.fitnass-page .fitnass-story-section {
+    padding-top: 5.5rem;
+}
+
+.fitnass-page .fitnass-story-card,
+.fitnass-page .fitnass-timeline-card {
+    min-height: 470px;
+    border-radius: 24px;
+}
+
+.fitnass-page .fitnass-story-card {
+    border-color: rgba(96, 241, 197, 0.25);
+}
+
+.fitnass-page .fitnass-story-card img {
+    min-height: 470px;
+    object-position: center;
+}
+
+.fitnass-page .fitnass-story-card::after {
+    background: linear-gradient(180deg, transparent 20%, rgba(2, 10, 18, 0.3) 48%, rgba(2, 10, 18, 0.98) 100%);
+}
+
+.fitnass-page .fitnass-story-card .media-card-body {
+    min-height: 470px;
+    padding: 2rem;
+}
+
+.fitnass-page .fitnass-story-card h3 {
+    max-width: 27rem;
+    font-size: clamp(1.5rem, 3vw, 2.15rem);
+}
+
+.fitnass-page .fitnass-timeline-card {
+    padding: 2rem;
+    border-color: rgba(93, 207, 255, 0.22);
+    background: rgba(5, 19, 30, 0.88);
+}
+
+.fitnass-page .fitnass-timeline-card .feature-list {
+    gap: 0;
+    margin-top: 1.6rem;
+}
+
+.fitnass-page .fitnass-timeline-card .feature-item {
+    position: relative;
+    padding: 0.95rem 0.9rem 0.95rem 2.8rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.fitnass-page .fitnass-timeline-card .feature-item:not(:last-child) {
+    border-bottom: 1px solid rgba(123, 186, 209, 0.12);
+}
+
+.fitnass-page .fitnass-timeline-card .feature-item::before {
+    content: "";
+    position: absolute;
+    top: 1.2rem;
+    left: 0.65rem;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--fit-mint);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(96, 241, 197, 0.45);
+}
+
+.fitnass-page .fitnass-timeline-card .feature-item strong {
+    color: #edfaff;
+}
+
+.fitnass-page .fitnass-timeline-card .feature-item span {
+    color: #89a2ae;
+}
+
+.fitnass-page .fitnass-timeline-card a {
+    color: var(--fit-mint);
+}
+
+.fitnass-page .fitnass-cta {
+    min-height: 340px;
+    border-color: rgba(96, 241, 197, 0.16);
+}
+
+.fitnass-page .fitnass-cta .cta-band-media::after {
+    background: linear-gradient(90deg, rgba(2, 10, 18, 0.93), rgba(2, 10, 18, 0.45) 62%, rgba(2, 10, 18, 0.22));
+}
+
+.fitnass-page .fitnass-cta h2 {
+    max-width: 39rem;
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    line-height: 1.1;
+}
+
+.fitnass-page .fitnass-cta .btn-gold {
+    background: linear-gradient(120deg, #dffff5, var(--fit-mint));
+    color: #02120e;
+    box-shadow: 0 0 32px rgba(96, 241, 197, 0.25);
+}
+
+@media (max-width: 991.98px) {
+    .fitnass-page .page-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fitnass-page .fitnass-hero {
+        min-height: 720px;
+    }
+
+    .fitnass-page .page-hero-grid > div {
+        width: min(590px, 76%);
+    }
+
+    .fitnass-page .fitnass-hero::before {
+        background:
+            linear-gradient(90deg, rgba(2, 10, 18, 0.97), rgba(2, 10, 18, 0.66) 58%, rgba(2, 10, 18, 0.16)),
+            linear-gradient(180deg, rgba(2, 10, 18, 0.12), transparent 55%, var(--fit-navy));
+    }
+
+    .fitnass-page .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fitnass-page .fitnass-hero {
+        min-height: 760px;
+        align-items: flex-end;
+        padding: 8rem 0 3.5rem;
+    }
+
+    .fitnass-page .page-title {
+        font-size: 2.65rem;
+    }
+
+    .fitnass-page .hero-copy {
+        font-size: 0.9rem;
+    }
+
+    .fitnass-page .page-hero-grid > div {
+        width: 100%;
+    }
+
+    .fitnass-page .fitnass-hero-media > img {
+        object-position: 67% center;
+    }
+
+    .fitnass-page .fitnass-hero::before {
+        background:
+            linear-gradient(180deg, rgba(2, 10, 18, 0.05) 0%, rgba(2, 10, 18, 0.18) 28%, rgba(2, 10, 18, 0.92) 55%, var(--fit-navy) 100%);
+    }
+
+    .fitnass-app-badge {
+        width: 58px;
+        height: 58px;
+        right: 0.8rem;
+        bottom: 0.8rem;
+        border-radius: 16px;
+    }
+
+    .fitnass-page .section {
+        padding: 3.7rem 0;
+    }
+
+    .fitnass-page .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fitnass-page .fitnass-feature-card {
+        min-height: 200px;
+    }
+
+    .fitnass-page .fitnass-story-card,
+    .fitnass-page .fitnass-story-card img,
+    .fitnass-page .fitnass-story-card .media-card-body,
+    .fitnass-page .fitnass-timeline-card {
+        min-height: 420px;
+    }
+}

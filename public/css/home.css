@@ -78,6 +78,19 @@ img {
     flex-shrink: 0;
 }
 
+.brand-logo-img {
+    display: block;
+    height: 42px;
+    width: auto;
+    max-width: min(220px, 42vw);
+    object-fit: contain;
+}
+
+.site-footer .brand-logo-img {
+    height: 48px;
+    max-width: min(240px, 70vw);
+}
+
 .brand-mark {
     font-size: 1.85rem;
     font-weight: 800;
@@ -950,6 +963,11 @@ img {
 @media (max-width: 991.98px) {
     .navbar-ats {
         grid-template-columns: 1fr auto;
+    }
+
+    .brand-logo-img {
+        height: 36px;
+        max-width: min(180px, 55vw);
     }
 
     .nav-toggle {

@@ -5,8 +5,7 @@
     <div class="container-ats">
         <nav class="navbar-ats" aria-label="Primary">
             <a class="brand" href="{{ route('home') }}">
-                <span class="brand-mark">ATS</span>
-                <span class="brand-text">Artificial<br>Technology<br>Solutions</span>
+                <img class="brand-logo-img" src="{{ asset('images/ats-logo-transparent.png') }}" alt="Artificial Technology Solutions">
             </a>
 
             <ul class="nav-links">

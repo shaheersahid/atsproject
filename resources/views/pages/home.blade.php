@@ -132,26 +132,24 @@
                 </article>
             </div>
 
-            <div class="col-md-6" data-reveal>
+                    <div class="col-md-6" data-reveal>
                 <article class="product-card">
                     <div class="product-card-media">
-                        <img src="{{ asset('images/fitnass.jpg') }}" alt="Meditation wellness scene for Fitnass">
+                        <img src="{{ asset('images/fitnass.jpg') }}" alt="Fitnass AI fitness and nutrition experience">
                     </div>
                     <div class="product-card-body">
-                        <div class="product-logo fit">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2c2.8 3.8 7 6.4 7 11a7 7 0 1 1-14 0c0-4.6 4.2-7.2 7-11Z"/>
-                            </svg>
+                        <div class="product-logo fit product-logo--image">
+                            <img src="{{ asset('images/fitnass/logo-transparent.png') }}" alt="Fitnass">
                         </div>
                         <h3>Fitnass</h3>
-                        <p>Digital fitness, wellness, and health tools for modern living.</p>
+                        <p>AI fitness and nutrition app for iOS and Android — tracks workouts, builds plans, and logs meals from a photo. Launching Q1 2027.</p>
                         <div class="product-meta">
                             <div class="pill-tags">
-                                <span>Fitness</span>
-                                <span>Wellness</span>
+                                <span>AI Fitness</span>
                                 <span>Nutrition</span>
-                                <span>Mindfulness</span>
-                                <span>Health</span>
+                                <span>iOS</span>
+                                <span>Android</span>
+                                <span>Q1 2027</span>
                             </div>
                             <a class="circle-btn" href="{{ route('fitnass') }}" aria-label="Learn more about Fitnass">→</a>
                         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'ATNIC Inference Engine | ATS')
-@section('meta_description', 'ATS builds intelligent products, venture-backed businesses, and scalable technology platforms. ATNIC is our flagship intelligence platform.')
+@section('meta_description', 'ATNIC converts complex data into context-aware reasoning, decision intelligence, and automation.')
 
 @push('styles')
 <link href="{{ asset('css/atnic.css') }}" rel="stylesheet">
@@ -9,204 +9,172 @@
 
 @section('content')
 <div class="atnic-page">
-    <section class="ar-hero">
-        <div class="container-ats ar-hero-grid">
-            <div class="ar-hero-copy" data-reveal>
-                <p class="ar-kicker">Artificial Technology Solutions</p>
-                <h1>We build what<br><span>comes next.</span></h1>
-                <p class="ar-hero-lead">ATS creates intelligent products, venture-backed digital businesses, and scalable technology platforms.</p>
-                <div class="ar-actions">
-                    <a class="ar-button ar-button-light" href="#products">Explore Products <span>→</span></a>
-                    <a class="ar-button ar-button-dark" href="{{ route('contact') }}">Build With ATS</a>
+    <svg class="atnic-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+            <symbol id="atnic-chart" viewBox="0 0 32 32">
+                <path d="M4 28V20h5v8m4 0V14h5v14m4 0V7h5v21M4 14 13 7l6 3L28 2m-7 0h7v7"/>
+            </symbol>
+            <symbol id="atnic-target" viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="6"/><circle cx="16" cy="16" r="1.5"/><path d="M16 1v4m0 22v4M1 16h4m22 0h4"/>
+            </symbol>
+            <symbol id="atnic-users" viewBox="0 0 32 32">
+                <circle cx="12" cy="10" r="5"/><path d="M3 28v-5a9 9 0 0 1 18 0v5M22 6a5 5 0 0 1 0 10m2 3a7 7 0 0 1 5 7v2M8 28v-6m9 6v-6"/>
+            </symbol>
+            <symbol id="atnic-trend" viewBox="0 0 32 32">
+                <path d="m3 25 8-10 6 5L29 5m-8 0h8v8"/><circle cx="4" cy="26" r="2"/><circle cx="11" cy="15" r="2"/><circle cx="17" cy="20" r="2"/>
+            </symbol>
+            <symbol id="atnic-network" viewBox="0 0 32 32">
+                <circle cx="7" cy="6" r="3"/><circle cx="7" cy="26" r="3"/><circle cx="25" cy="16" r="3"/><circle cx="12" cy="16" r="3"/><path d="m8 9 3 4m-3 10 3-4m4-3h7"/>
+            </symbol>
+            <symbol id="atnic-rocket" viewBox="0 0 32 32">
+                <path d="M11 21C13 10 21 4 29 3c-1 8-7 16-18 18Zm0-9-7 2-2 7 8-1m11 1-2 8-7 2 2-9M8 24l-5 5m4-8-5 4m9 2-4 4"/><circle cx="22" cy="10" r="3"/>
+            </symbol>
+            <symbol id="atnic-layers" viewBox="0 0 32 32">
+                <path d="m2 9 14-7 14 7-14 7L2 9Zm0 7 14 7 14-7M2 23l14 7 14-7"/>
+            </symbol>
+            <symbol id="atnic-globe" viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="13"/><ellipse cx="16" cy="16" rx="6" ry="13"/><path d="M3 16h26M5 8c6 4 16 4 22 0M5 24c6-4 16-4 22 0"/>
+            </symbol>
+        </defs>
+    </svg>
+
+    <section class="atnic-hero" aria-labelledby="atnic-title">
+        <div class="atnic-hero-art">
+            <img src="{{ asset('images/atnic-reference/engine-hero.png') }}" alt="ATNIC inference sphere inside a luminous reactor surrounded by holographic data panels" width="1536" height="1024" fetchpriority="high">
+            <span class="atnic-hero-label atnic-label-data">Multi-modal<br>data</span>
+            <span class="atnic-hero-label atnic-label-models">Reasoning<br>models</span>
+            <span class="atnic-hero-label atnic-label-context">Context<br>understanding</span>
+            <span class="atnic-hero-label atnic-label-action">Action<br>automation</span>
+        </div>
+        <div class="atnic-wrap atnic-hero-inner">
+            <div class="atnic-hero-copy">
+                <p class="atnic-eyebrow">ATNIC <span>Inference Engine</span></p>
+                <h1 id="atnic-title">From data to<br>reasoning,<br>inference, and <span>action.</span></h1>
+                <p class="atnic-hero-description">ATNIC is an intelligence layer designed to convert<br class="atnic-desktop-break"> complex data into context-aware reasoning,<br class="atnic-desktop-break"> decision intelligence, and automation.</p>
+                <div class="atnic-actions">
+                    <a class="atnic-button atnic-button-white" href="{{ route('contact') }}">Request Investor Deck <span aria-hidden="true">→</span></a>
+                    <a class="atnic-button atnic-button-outline" href="{{ route('contact') }}">Book a Demo</a>
                 </div>
-                <div class="ar-hero-metrics">
-                    <div><small>Products</small><strong>3+</strong></div>
-                    <div><small>Ventures</small><strong>In Creation</strong></div>
-                    <div><small>Technology</small><strong>ATNIC</strong></div>
-                    <div><small>Mission</small><strong>A Smarter Tomorrow.</strong></div>
-                </div>
-            </div>
-            <div class="ar-hero-visual" data-reveal>
-                <img
-                    src="{{ asset('images/atnic-reference/hero-v2.png') }}"
-                    alt="ATS digital Earth with floating city holograms above a futuristic skyline"
-                    width="1536"
-                    height="1024"
-                    fetchpriority="high"
-                >
+                <ul class="atnic-highlights" aria-label="ATNIC capabilities">
+                    <li>Real-time<br>multi-modal</li>
+                    <li>Context-aware<br>reasoning</li>
+                    <li>Enterprise<br>ready</li>
+                    <li>Built for<br>real-world impact</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <main class="ar-content">
-        <div class="container-ats">
-            <section id="ventures" class="ar-section">
-                <div class="ar-section-heading" data-reveal>
-                    <h2>Two Operating Arms</h2>
-                    <span></span>
-                    <p>Products today. A brighter tomorrow.</p>
-                </div>
-                <div class="ar-arms">
-                    <article class="ar-arm" data-reveal>
-                        <img src="{{ asset('images/atnic-reference/products-city-v2.png') }}" alt="Silver-blue futuristic skyscrapers and illuminated waterfront" loading="lazy" decoding="async">
-                        <div class="ar-arm-overlay"></div>
-                        <div class="ar-arm-copy">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Zm0 9L4 7.5M12 12l8-4.5M12 12v9"/></svg>
-                            <h3>ATS Products</h3>
-                            <p>Technology businesses built<br>and owned by ATS.</p>
-                            <a href="#products" aria-label="Explore ATS Products">→</a>
-                        </div>
-                        <strong class="ar-strip">Build &nbsp; | &nbsp; Scale &nbsp; | &nbsp; Create Real Value</strong>
-                    </article>
-                    <article class="ar-arm ar-arm-warm" data-reveal>
-                        <img src="{{ asset('images/atnic-reference/ventures-mountain-v2.png') }}" alt="Jagged alpine mountain peak in golden sunrise and mist" loading="lazy" decoding="async">
-                        <div class="ar-arm-overlay"></div>
-                        <div class="ar-arm-copy">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 18 8-14 8 14H4Zm5.5 0L12 12l2.5 6"/></svg>
-                            <h3>ATS Ventures</h3>
-                            <p>Ideas, startup creation, venture<br>building, and commercialization.</p>
-                            <a href="{{ route('ventures') }}" aria-label="Explore ATS Ventures">→</a>
-                        </div>
-                        <strong class="ar-strip ar-strip-right">Ideas &nbsp; | &nbsp; People &nbsp; | &nbsp; Capital &nbsp; | &nbsp; Global Impact</strong>
-                    </article>
-                </div>
-            </section>
-
-            <section id="products" class="ar-section ar-products-section">
-                <div class="ar-section-heading" data-reveal>
-                    <h2>Flagship Products</h2>
-                    <span></span>
-                    <p>Real businesses. Real people. Real impact.</p>
-                </div>
-                <div class="ar-products">
-                    <article class="ar-product ar-product-small" data-reveal>
-                        <img src="{{ asset('images/atnic-reference/deal4less-v2.png') }}" alt="Concert crowd holding a phone with a glowing D4L screen" loading="lazy" decoding="async">
-                        <div class="ar-card-fade"></div>
-                        <div class="ar-product-copy">
-                            <div class="ar-product-title">
-                                <b class="ar-badge ar-badge-d4">D4</b>
-                                <h3>Deal4Less</h3>
-                                <a href="{{ route('deal4less') }}" aria-label="Learn more about Deal4Less">→</a>
-                            </div>
-                            <p>Voucher Marketplace • 1+1 Membership •<br>Events & Gatherings</p>
-                        </div>
-                    </article>
-                    <article class="ar-product ar-product-small" data-reveal>
-                        <img src="{{ asset('images/atnic-reference/fitnass-v2.png') }}" alt="Woman meditating beside a peaceful mountain lake" loading="lazy" decoding="async">
-                        <div class="ar-card-fade"></div>
-                        <div class="ar-product-copy">
-                            <div class="ar-product-title">
-                                <b class="ar-badge ar-badge-fit">◆</b>
-                                <h3>Fitnass</h3>
-                                <a href="{{ route('fitnass') }}" aria-label="Learn more about Fitnass">→</a>
-                            </div>
-                            <p>Digital fitness, wellness, and health tools</p>
-                        </div>
-                    </article>
-                    <article class="ar-product ar-product-atnic" data-reveal>
-                        <img src="{{ asset('images/atnic-reference/atnic-humanoid-v2.png') }}" alt="Left-facing AI humanoid with blue neural connections and a golden brain core" loading="lazy" decoding="async">
-                        <div class="ar-product-copy ar-atnic-card-copy">
-                            <div class="ar-product-title">
-                                <b class="ar-atnic-mark">A</b>
-                                <h3>ATNIC<small>Inference Engine</small></h3>
-                                <a href="#technology" aria-label="Learn more about ATNIC">→</a>
-                            </div>
-                            <p>Reasoning • Inference • Automation •<br>Decision Intelligence</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section id="technology" class="ar-intelligence" data-reveal>
-                <div class="ar-intelligence-head">
-                    <h2><b>ATNIC</b> <span>Inference Engine</span></h2>
-                    <p>Our flagship intelligence platform</p>
-                </div>
-                <div class="ar-intelligence-body">
-                    <div class="ar-intro">
-                        <h3>An intelligence engine designed<br>to transform data into <span>reasoning,<br>inference, and action.</span></h3>
-                        <p>ATNIC combines advanced AI, multi-modal reasoning, and<br>real-world context to turn complex data into actionable<br>intelligence — empowering better decisions, faster.</p>
-                        <div class="ar-actions">
-                            <a class="ar-button ar-button-light" href="#technology">Explore ATNIC <span>→</span></a>
-                            <a class="ar-button ar-button-dark" href="{{ route('contact') }}">Request a Demo</a>
-                        </div>
-                    </div>
-                    <div class="ar-workflow">
-                        @foreach ([
-                            ['Data', 'Multi-source<br>real-world data'],
-                            ['Reasoning', 'Contextual<br>understanding'],
-                            ['Inference', 'Insights<br>& predictions'],
-                            ['Action', 'Automation<br>& real-world impact'],
-                        ] as $index => $step)
-                            <article>
-                                <h4>{{ $step[0] }}</h4>
-                                <span class="ar-workflow-art ar-workflow-art-{{ $index }}"></span>
-                                <p>{!! $step[1] !!}</p>
-                            </article>
-                            @if (! $loop->last)
-                                <b>→</b>
-                            @endif
-                        @endforeach
-                    </div>
-                </div>
-                <div class="ar-data-wave"></div>
-                <div class="ar-capabilities">
-                    <span>◉ &nbsp; Enterprise Analytics</span>
-                    <span>◌ &nbsp; Autonomous Systems</span>
-                    <span>◉ &nbsp; Intelligent Agents</span>
-                    <span>▣ &nbsp; Decision Support</span>
-                    <span>◇ &nbsp; Real-world Applications</span>
-                </div>
-            </section>
-
-            <section id="company" class="ar-section ar-why-section">
-                <div class="ar-section-heading" data-reveal>
-                    <h2>Why ATS</h2>
-                    <span></span>
-                    <p>A unique model for a bigger tomorrow.</p>
-                </div>
-                <div class="ar-why-grid">
-                    <article data-reveal>
-                        <i>⬡</i>
-                        <div>
-                            <h3>Own Products</h3>
-                            <p>We build and own technology businesses for long-term value.</p>
-                        </div>
-                    </article>
-                    <article data-reveal>
-                        <i>◉</i>
-                        <div>
-                            <h3>AI Capability</h3>
-                            <p>Deep AI expertise across models, data, and real-world applications.</p>
-                        </div>
-                    </article>
-                    <article data-reveal>
-                        <i>♢</i>
-                        <div>
-                            <h3>Venture Creation</h3>
-                            <p>We turn bold ideas into scalable companies.</p>
-                        </div>
-                    </article>
-                    <article data-reveal>
-                        <i>◇</i>
-                        <div>
-                            <h3>Scalable Platforms</h3>
-                            <p>Shared technology, talent and infrastructure for compounding growth.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
+    <section class="atnic-section atnic-how" aria-labelledby="atnic-how-title">
+        <div class="atnic-wrap">
+            <div class="atnic-section-heading">
+                <h2 id="atnic-how-title">How ATNIC Works</h2><span></span>
+                <p>From diverse data to real-world impact</p>
+            </div>
+            <ol class="atnic-workflow">
+                @foreach ([
+                    ['Data Input', 'Ingests structured, unstructured, and real-time data from multiple sources.'],
+                    ['Context Modeling', 'Builds domain context, understands intent, and models relationships across data.'],
+                    ['Reasoning', 'Applies advanced reasoning models to evaluate, simulate, and derive insights.'],
+                    ['Inference', 'Generates reliable inferences, predictions, and actionable recommendations.'],
+                    ['Action Layer', 'Connects to systems, agents, and workflows to drive automation and real-world impact.'],
+                ] as $step)
+                    <li class="atnic-step">
+                        <span class="atnic-step-number">0{{ $loop->iteration }}</span>
+                        <h3>{{ $step[0] }}</h3>
+                        <span class="atnic-pipeline-art atnic-pipeline-art-{{ $loop->index }}" aria-hidden="true"></span>
+                        <p>{{ $step[1] }}</p>
+                        @if (! $loop->last)
+                            <span class="atnic-step-arrow" aria-hidden="true">⟶</span>
+                        @endif
+                    </li>
+                @endforeach
+            </ol>
         </div>
-    </main>
+    </section>
 
-    <section class="ar-cta">
-        <img src="{{ asset('images/atnic-reference/earth-cta-v2.png') }}" alt="Earth from space at golden sunrise" loading="lazy" decoding="async">
-        <div class="ar-cta-shade"></div>
-        <div class="container-ats ar-cta-inner" data-reveal>
-            <h2>The next great company<br>may start with <span>one idea.</span></h2>
-            <div class="ar-cta-aside">
-                <p>People &nbsp;•&nbsp; Ideas &nbsp;•&nbsp; Technology<br>A brighter tomorrow.</p>
-                <a class="ar-button ar-button-gold" href="{{ route('contact') }}">Partner with ATS <span>→</span></a>
+    <section class="atnic-section atnic-power" aria-labelledby="atnic-power-title">
+        <div class="atnic-wrap">
+            <div class="atnic-section-heading">
+                <h2 id="atnic-power-title">What Makes It Powerful</h2><span></span>
+                <p>Intelligence beyond today</p>
+            </div>
+            <div class="atnic-power-grid">
+                @foreach ([
+                    ['Multi-Modal Intelligence', 'Understands and connects text, data, images, video, and real-world signals.'],
+                    ['Decision Support', 'Delivers trusted, explainable insights for complex business decisions.'],
+                    ['Automation Ready', 'Designed to power autonomous workflows, agents, and enterprise systems.'],
+                    ['Enterprise Integration', 'Built for secure, scalable deployment across existing infrastructure.'],
+                ] as $feature)
+                    <article class="atnic-feature">
+                        <span class="atnic-feature-art atnic-feature-art-{{ $loop->index }}" aria-hidden="true"></span>
+                        <h3>{{ $feature[0] }}</h3>
+                        <p>{{ $feature[1] }}</p>
+                    </article>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="atnic-section atnic-use-cases" aria-labelledby="atnic-use-cases-title">
+        <div class="atnic-wrap">
+            <div class="atnic-section-heading">
+                <h2 id="atnic-use-cases-title">Use Cases</h2><span></span>
+                <p>Real problems. Real intelligence. Real impact.</p>
+            </div>
+            <div class="atnic-case-grid">
+                @foreach ([
+                    ['Operational Intelligence', 'Real-time insight across complex operations.', 'case-operations.png', 'Illuminated futuristic city and connected waterfront', 'chart'],
+                    ['Decision Systems', 'Augment human decision-making with trusted AI reasoning.', 'case-decisions.png', 'Analyst working with holographic decision dashboards', 'target'],
+                    ['Intelligent Agents', 'Domain-specific agents that reason, plan, and execute.', 'case-agents.png', 'AI humanoid with a luminous neural network', 'users'],
+                    ['Predictive Insight', 'Anticipate change and uncover opportunities earlier.', 'case-predictive.png', 'Connected Earth seen from orbit', 'trend'],
+                    ['Workflow Automation', 'Turn intelligence into action across business processes.', 'case-automation.png', 'Robotic arms operating in an automated factory', 'network'],
+                ] as $useCase)
+                    <article class="atnic-case">
+                        <img src="{{ asset('images/atnic-reference/'.$useCase[2]) }}" alt="{{ $useCase[3] }}" width="1448" height="1086" loading="lazy" decoding="async">
+                        <div class="atnic-case-copy">
+                            <svg class="atnic-line-icon" aria-hidden="true"><use href="#atnic-{{ $useCase[4] }}"></use></svg>
+                            <h3>{{ $useCase[0] }}</h3>
+                            <p>{{ $useCase[1] }}</p>
+                        </div>
+                    </article>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="atnic-section atnic-why" aria-labelledby="atnic-why-title">
+        <div class="atnic-wrap">
+            <div class="atnic-section-heading">
+                <h2 id="atnic-why-title">Why ATNIC Matters</h2><span></span>
+                <p>A foundational layer for a brighter tomorrow</p>
+            </div>
+            <div class="atnic-why-grid">
+                @foreach ([
+                    ['Massive Platform Potential', 'A core intelligence layer across multiple markets and industries.', 'rocket'],
+                    ['Reusable Intelligence Infrastructure', 'Built once. Applied everywhere. Compounding value over time.', 'layers'],
+                    ['Scalable and Defensible', 'Designed for global scale with increasing value as data and usage grow.', 'chart'],
+                    ['Cross-Industry Impact', 'From enterprise to government to vertical AI solutions — ATNIC enables a smarter world.', 'globe'],
+                ] as $reason)
+                    <article class="atnic-reason">
+                        <svg class="atnic-line-icon" aria-hidden="true"><use href="#atnic-{{ $reason[2] }}"></use></svg>
+                        <div><h3>{{ $reason[0] }}</h3><p>{{ $reason[1] }}</p></div>
+                    </article>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="atnic-cta" aria-labelledby="atnic-cta-title">
+        <img class="atnic-cta-image" src="{{ asset('images/atnic-reference/earth-cta-v2.png') }}" alt="Golden sunrise over a connected Earth" width="2048" height="683" loading="lazy" decoding="async">
+        <div class="atnic-wrap atnic-cta-inner">
+            <div>
+                <h2 id="atnic-cta-title">Intelligence is<br>becoming <span>infrastructure.</span></h2>
+                <p>Partner with ATS to bring ATNIC to global markets<br class="atnic-desktop-break"> and shape a smarter tomorrow.</p>
+            </div>
+            <div class="atnic-cta-aside">
+                <a class="atnic-button atnic-button-gold" href="{{ route('contact') }}">Partner on ATNIC <span aria-hidden="true">→</span></a>
+                <p>Invest · Deploy · Scale · Together</p>
             </div>
         </div>
     </section>

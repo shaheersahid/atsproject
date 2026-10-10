@@ -8,7 +8,7 @@
             <ul class="footer-links">
                 <li><a href="{{ route('deal4less') }}">Deal4Less</a></li>
                 <li><a href="{{ route('fitnass') }}">Fitnass</a></li>
-                <li><a href="{{ route('atnic') }}">ATNIC</a></li>
+                <li><a href="{{ route('atnic') }}">AETNIC</a></li>
                 <li><a href="{{ route('ventures') }}">Ventures</a></li>
                 <li><a href="{{ route('about') }}">Company</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>

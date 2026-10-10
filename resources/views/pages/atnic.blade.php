@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'ATNIC Inference Engine | ATS')
-@section('meta_description', 'ATNIC converts complex data into context-aware reasoning, decision intelligence, and automation.')
+@section('title', 'AETNIC Inference Engine | ATS')
+@section('meta_description', 'AETNIC converts complex data into context-aware reasoning, decision intelligence, and automation.')
 
 @push('styles')
 <link href="{{ asset('css/atnic.css') }}" rel="stylesheet">
@@ -40,7 +40,7 @@
 
     <section class="atnic-hero" aria-labelledby="atnic-title">
         <div class="atnic-hero-art">
-            <img src="{{ asset('images/atnic-reference/engine-hero.png') }}" alt="ATNIC inference sphere inside a luminous reactor surrounded by holographic data panels" width="1536" height="1024" fetchpriority="high">
+            <img src="{{ asset('images/atnic-reference/engine-hero.png') }}" alt="AETNIC inference sphere inside a luminous reactor surrounded by holographic data panels" width="1536" height="1024" fetchpriority="high">
             <span class="atnic-hero-label atnic-label-data">Multi-modal<br>data</span>
             <span class="atnic-hero-label atnic-label-models">Reasoning<br>models</span>
             <span class="atnic-hero-label atnic-label-context">Context<br>understanding</span>
@@ -48,14 +48,14 @@
         </div>
         <div class="atnic-wrap atnic-hero-inner">
             <div class="atnic-hero-copy">
-                <p class="atnic-eyebrow">ATNIC <span>Inference Engine</span></p>
+                <p class="atnic-eyebrow">AETNIC <span>Inference Engine</span></p>
                 <h1 id="atnic-title">From data to<br>reasoning,<br>inference, and <span>action.</span></h1>
-                <p class="atnic-hero-description">ATNIC is an intelligence layer designed to convert<br class="atnic-desktop-break"> complex data into context-aware reasoning,<br class="atnic-desktop-break"> decision intelligence, and automation.</p>
+                <p class="atnic-hero-description">AETNIC is an intelligence layer designed to convert<br class="atnic-desktop-break"> complex data into context-aware reasoning,<br class="atnic-desktop-break"> decision intelligence, and automation.</p>
                 <div class="atnic-actions">
                     <a class="atnic-button atnic-button-white" href="{{ route('contact') }}">Request Investor Deck <span aria-hidden="true">→</span></a>
                     <a class="atnic-button atnic-button-outline" href="{{ route('contact') }}">Book a Demo</a>
                 </div>
-                <ul class="atnic-highlights" aria-label="ATNIC capabilities">
+                <ul class="atnic-highlights" aria-label="AETNIC capabilities">
                     <li>Real-time<br>multi-modal</li>
                     <li>Context-aware<br>reasoning</li>
                     <li>Enterprise<br>ready</li>
@@ -68,7 +68,7 @@
     <section class="atnic-section atnic-how" aria-labelledby="atnic-how-title">
         <div class="atnic-wrap">
             <div class="atnic-section-heading">
-                <h2 id="atnic-how-title">How ATNIC Works</h2><span></span>
+                <h2 id="atnic-how-title">How AETNIC Works</h2><span></span>
                 <p>From diverse data to real-world impact</p>
             </div>
             <ol class="atnic-workflow">
@@ -146,7 +146,7 @@
     <section class="atnic-section atnic-why" aria-labelledby="atnic-why-title">
         <div class="atnic-wrap">
             <div class="atnic-section-heading">
-                <h2 id="atnic-why-title">Why ATNIC Matters</h2><span></span>
+                <h2 id="atnic-why-title">Why AETNIC Matters</h2><span></span>
                 <p>A foundational layer for a brighter tomorrow</p>
             </div>
             <div class="atnic-why-grid">
@@ -154,7 +154,7 @@
                     ['Massive Platform Potential', 'A core intelligence layer across multiple markets and industries.', 'rocket'],
                     ['Reusable Intelligence Infrastructure', 'Built once. Applied everywhere. Compounding value over time.', 'layers'],
                     ['Scalable and Defensible', 'Designed for global scale with increasing value as data and usage grow.', 'chart'],
-                    ['Cross-Industry Impact', 'From enterprise to government to vertical AI solutions — ATNIC enables a smarter world.', 'globe'],
+                    ['Cross-Industry Impact', 'From enterprise to government to vertical AI solutions — AETNIC enables a smarter world.', 'globe'],
                 ] as $reason)
                     <article class="atnic-reason">
                         <svg class="atnic-line-icon" aria-hidden="true"><use href="#atnic-{{ $reason[2] }}"></use></svg>
@@ -170,10 +170,10 @@
         <div class="atnic-wrap atnic-cta-inner">
             <div>
                 <h2 id="atnic-cta-title">Intelligence is<br>becoming <span>infrastructure.</span></h2>
-                <p>Partner with ATS to bring ATNIC to global markets<br class="atnic-desktop-break"> and shape a smarter tomorrow.</p>
+                <p>Partner with ATS to bring AETNIC to global markets<br class="atnic-desktop-break"> and shape a smarter tomorrow.</p>
             </div>
             <div class="atnic-cta-aside">
-                <a class="atnic-button atnic-button-gold" href="{{ route('contact') }}">Partner on ATNIC <span aria-hidden="true">→</span></a>
+                <a class="atnic-button atnic-button-gold" href="{{ route('contact') }}">Partner on AETNIC <span aria-hidden="true">→</span></a>
                 <p>Invest · Deploy · Scale · Together</p>
             </div>
         </div>

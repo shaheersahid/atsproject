@@ -11,7 +11,7 @@
             <ul class="nav-links">
                 <li><a href="{{ route('deal4less') }}" class="{{ $current === 'deal4less' ? 'is-active' : '' }}">Deal4Less</a></li>
                 <li><a href="{{ route('fitnass') }}" class="{{ $current === 'fitnass' ? 'is-active' : '' }}">Fitnass</a></li>
-                <li><a href="{{ route('atnic') }}" class="{{ $current === 'atnic' ? 'is-active' : '' }}">ATNIC</a></li>
+                <li><a href="{{ route('atnic') }}" class="{{ $current === 'atnic' ? 'is-active' : '' }}">AETNIC</a></li>
                 <li><a href="{{ route('ventures') }}" class="{{ $current === 'ventures' ? 'is-active' : '' }}">Ventures</a></li>
                 <li><a href="{{ route('about') }}" class="{{ $current === 'about' ? 'is-active' : '' }}">Company</a></li>
                 <li><a href="{{ route('contact') }}" class="{{ $current === 'contact' ? 'is-active' : '' }}">Contact</a></li>

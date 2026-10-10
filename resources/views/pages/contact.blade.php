@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Contact ATS | Artificial Technology Solutions')
-@section('meta_description', 'Start a conversation with ATS for investment, partnerships, ventures, Deal4Less, Fitnass or ATNIC.')
+@section('meta_description', 'Start a conversation with ATS for investment, partnerships, ventures, Deal4Less, Fitnass or AETNIC.')
 
 @section('content')
 <section class="page-hero">
@@ -27,7 +27,7 @@
                     <div class="feature-list">
                         <div class="feature-item">
                             <strong>Investment</strong>
-                            <span>Discuss ATS, portfolio companies or ATNIC.</span>
+                            <span>Discuss ATS, portfolio companies or AETNIC.</span>
                         </div>
                         <div class="feature-item">
                             <strong>Partnerships</strong>
@@ -73,7 +73,7 @@
                                 <label>I’m interested in
                                     <select name="interest">
                                         <option>Investment</option>
-                                        <option>ATNIC</option>
+                                        <option>AETNIC</option>
                                         <option>Deal4Less</option>
                                         <option>Fitnass</option>
                                         <option>ATS Ventures</option>

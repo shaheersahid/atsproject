@@ -25,6 +25,10 @@
                     <p class="eyebrow">Start a Conversation</p>
                     <h3>Choose the conversation that fits you.</h3>
                     <div class="feature-list">
+                        <a class="feature-item" href="mailto:info@atsolutions.sa">
+                            <strong>Email Us</strong>
+                            <span>info@atsolutions.sa</span>
+                        </a>
                         <div class="feature-item">
                             <strong>Investment</strong>
                             <span>Discuss ATS, portfolio companies or AETNIC.</span>

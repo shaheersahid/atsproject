@@ -164,7 +164,7 @@
 <section class="section atnic" id="intelligence">
     <div class="container-ats">
         <div class="section-head">
-            <h2 class="section-title">ATNIC — Our Flagship Intelligence Platform</h2>
+            <h2 class="section-title">AETNIC — Our Flagship Intelligence Platform</h2>
             <p class="section-sub">From Diverse Data to Real-World Impact.</p>
         </div>
 
@@ -173,7 +173,7 @@
                 <p class="atnic-kicker">Intelligence Layer</p>
                 <h3 class="atnic-title">Transforming data into <span class="glow">reasoning, inference, and action.</span></h3>
                 <p class="atnic-copy">
-                    ATNIC turns multi-modal data into context-aware reasoning and enterprise-ready automation —
+                    AETNIC turns multi-modal data into context-aware reasoning and enterprise-ready automation —
                     so products and ventures can move from insight to real-world outcomes.
                 </p>
                 <div class="atnic-actions">
@@ -183,7 +183,7 @@
             </div>
 
             <div data-reveal>
-                <div class="pipeline" aria-label="ATNIC intelligence pipeline">
+                <div class="pipeline" aria-label="AETNIC intelligence pipeline">
                     <div class="pipeline-step">
                         <div class="pipeline-icon"><span class="pipeline-art" aria-hidden="true"></span>
                         </div>

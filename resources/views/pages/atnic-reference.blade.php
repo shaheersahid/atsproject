@@ -13,7 +13,7 @@
         <img class="ar-hero-image" src="{{ asset('images/atnic-reference/hero.png') }}" alt="Connected digital Earth above a futuristic city">
         <div class="ar-hero-shade"></div>
         <div class="ar-hero-copy"><p class="ar-kicker">Artificial Technology Solutions</p><h1>We build what<br><span>comes next.</span></h1><p>ATS creates intelligent products, venture-backed<br>digital businesses, and scalable technology platforms.</p><div class="ar-actions"><a class="ar-button ar-button-light" href="#products">Explore Products <span>→</span></a><a class="ar-button ar-button-dark" href="{{ route('contact') }}">Build With ATS</a></div></div>
-        <div class="ar-hero-metrics"><div><small>Products</small><strong>3+</strong></div><div><small>Ventures</small><strong>In Creation</strong></div><div><small>Technology</small><strong>ATNIC</strong></div><div><small>Mission</small><strong>A Smarter Tomorrow.</strong></div></div>
+        <div class="ar-hero-metrics"><div><small>Products</small><strong>3+</strong></div><div><small>Ventures</small><strong>In Creation</strong></div><div><small>Technology</small><strong>AETNIC</strong></div><div><small>Mission</small><strong>A Smarter Tomorrow.</strong></div></div>
     </section>
 
     <main class="ar-content">
@@ -30,14 +30,14 @@
             <div class="ar-products">
                 <article class="ar-product ar-product-small"><img src="{{ asset('images/atnic-reference/deal4less.png') }}" alt="Concert crowd holding a glowing phone"><div class="ar-card-fade"></div><div class="ar-product-copy"><div class="ar-product-title"><b class="ar-badge ar-badge-d4">D4</b><h3>Deal4Less</h3><a href="{{ route('deal4less') }}">→</a></div><p>Voucher Marketplace • 1+1 Membership •<br>Events & Gatherings</p></div></article>
                 <article class="ar-product ar-product-small"><img src="{{ asset('images/home-wellness.jpg') }}" alt="Fitness woman facing a peaceful mountain landscape"><div class="ar-card-fade"></div><div class="ar-product-copy"><div class="ar-product-title"><b class="ar-badge ar-badge-fit">◆</b><h3>Fintass</h3><a href="{{ route('fitnass') }}">→</a></div><p>Digital fitness, wellness, and health tools</p></div></article>
-                <article class="ar-product ar-product-atnic"><img src="{{ asset('images/atnic-reference/atnic-humanoid.png') }}" alt="Futuristic AI humanoid with an illuminated digital brain"><div class="ar-product-copy ar-atnic-card-copy"><div class="ar-product-title"><b class="ar-atnic-mark">A</b><h3>ATNIC<small>Inference Engine</small></h3><a href="#technology">→</a></div><p>Reasoning • Inference • Automation •<br>Decision Intelligence</p></div></article>
+                <article class="ar-product ar-product-atnic"><img src="{{ asset('images/atnic-reference/atnic-humanoid.png') }}" alt="Futuristic AI humanoid with an illuminated digital brain"><div class="ar-product-copy ar-atnic-card-copy"><div class="ar-product-title"><b class="ar-atnic-mark">A</b><h3>AETNIC<small>Inference Engine</small></h3><a href="#technology">→</a></div><p>Reasoning • Inference • Automation •<br>Decision Intelligence</p></div></article>
             </div>
         </section>
 
         <section id="technology" class="ar-intelligence">
-            <div class="ar-intelligence-head"><h2><b>ATNIC</b> <span>Inference Engine</span></h2><p>Our flagship intelligence platform</p></div>
+            <div class="ar-intelligence-head"><h2><b>AETNIC</b> <span>Inference Engine</span></h2><p>Our flagship intelligence platform</p></div>
             <div class="ar-intelligence-body">
-                <div class="ar-intro"><h3>An intelligence engine designed<br>to transform data into <span>reasoning,<br>inference, and action.</span></h3><p>ATNIC combines advanced AI, multi-modal reasoning, and<br>real-world context to turn complex data into actionable<br>intelligence — empowering better decisions, faster.</p><div class="ar-actions"><a class="ar-button ar-button-light" href="#technology">Explore ATNIC <span>→</span></a><a class="ar-button ar-button-dark" href="{{ route('contact') }}">Request a Demo</a></div></div>
+                <div class="ar-intro"><h3>An intelligence engine designed<br>to transform data into <span>reasoning,<br>inference, and action.</span></h3><p>AETNIC combines advanced AI, multi-modal reasoning, and<br>real-world context to turn complex data into actionable<br>intelligence — empowering better decisions, faster.</p><div class="ar-actions"><a class="ar-button ar-button-light" href="#technology">Explore AETNIC <span>→</span></a><a class="ar-button ar-button-dark" href="{{ route('contact') }}">Request a Demo</a></div></div>
                 <div class="ar-workflow">
                     @foreach ([['Data', 'Multi-source<br>real-world data'], ['Reasoning', 'Contextual<br>understanding'], ['Inference', 'Insights<br>& predictions'], ['Action', 'Automation<br>& real-world impact']] as $index => $step)
                         <article><h4>{{ $step[0] }}</h4><span class="ar-workflow-art ar-workflow-art-{{ $index }}"></span><p>{!! $step[1] !!}</p></article>@if (! $loop->last)<b>→</b>@endif
